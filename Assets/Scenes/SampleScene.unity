@@ -352,7 +352,7 @@ MonoBehaviour:
   cameraContainer: {fileID: 1781724495}
   minLook: -85
   maxLook: 85
-  lookSensitivity: 1
+  lookSensitivity: 0.1
   mousedelta: {x: 0, y: 0}
   canLook: 1
 --- !u!114 &478288170
