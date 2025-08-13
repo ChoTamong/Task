@@ -154,7 +154,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 478288162}
   serializedVersion: 4
-  m_Mass: 30
+  m_Mass: 50
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -320,7 +320,19 @@ MonoBehaviour:
     m_ActionId: f25331b9-9107-430e-ae16-2bee8abf1b45
     m_ActionName: Player/Look[/Mouse/delta]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 478288169}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnJump
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 6dd8c8a1-f607-4051-a2d4-b8158a74f516
     m_ActionName: Player/Jump[/Keyboard/space]
   - m_PersistentCalls:
@@ -344,11 +356,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ed5ff84a7d1e6649abf32782c61515e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  JumpPower: 20
+  moveSpeed: 20
+  JumpPower: 300
   groundLayerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 183
   cameraContainer: {fileID: 1781724495}
   minLook: -85
   maxLook: 85
@@ -380,7 +392,7 @@ GameObject:
   - component: {fileID: 574991074}
   - component: {fileID: 574991073}
   - component: {fileID: 574991072}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -468,7 +480,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -15, y: 0.1, z: 15}
+  m_LocalScale: {x: 15, y: 0.1, z: 15}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
